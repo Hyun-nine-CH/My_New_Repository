@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int main(void) {
-    int num;
+    int i=1;
 
-    for(num=1, num<100, num++) {
-        if(num % 7=0 || num % 9==0)
-        printf("%d ", num);
+    while(i<100) {
+        if(i%9 == 0 || i%7 == 0)
+            printf("%2d는 7의 배수 또는 9의 배수 \n", i);
+        i++;
     }
     return 0;
 }
