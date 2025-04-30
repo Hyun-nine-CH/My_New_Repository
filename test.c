@@ -1,24 +1,10 @@
 #include <stdio.h>
 
-/*
 int main(void) {
-    printf("첫 번째 프로그램입니다.\n");
-    return 0;
-}
-
-int main(void) {
-    printf("첫 번째 프로그램입니다.");
-    return 0;
-}
-
-int main(void) {
-    printf("세 번째 프로그램입니다. \n 줄을 바꾸어 출력합니다. \n 여기까지 출력하고 \n 줄을 바꿉니다.\n");
-    return 0;
-}
-
-*/
-
-int main(void) {
-    printf("세 번째 프로그램입니다. \n 줄을 바꾸어 출력합니다. \n 여기까지 출력하고 \n 줄을 바꿉니다.\n");
-    return 0;
+	int decimal;
+	printf("정수를 입력해 주십시오. :");
+	scanf("%d", &decimal);
+	
+	printf("16진수로 나타낸 결과: 0x%X\n", decimal);
+	return 0;
 }
