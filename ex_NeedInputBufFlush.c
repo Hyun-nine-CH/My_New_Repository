@@ -6,6 +6,7 @@ int main(void) {
 
     fputs("Enter your ID: ", stdout);
     fgets(perID, sizeof(perID), stdin);
+//   scanf("%*c"); // Clear the input buffer
 
     fflush(stdin);
 
