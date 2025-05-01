@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    FILE *src=fopen("src.txt", "rt");
+    FILE *src=fopen("simple.txt", "rt");
     FILE *des=fopen("dst.txt", "wt");
     int ch;
 
