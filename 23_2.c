@@ -10,20 +10,26 @@ typedef struct rectangle {
     Point topright;
 } Rectangle;
 
-void areaCal(Rectangle r) {
-    return (r.bottomleft.xpos)
+int areaCal(Rectangle r) {
+    return (r.topright.xpos - r.bottomleft.xpos) * (r.topright.ypos - r.bottomleft.ypos);
 }
 
-void ShowRectangleInfo(Rectangle * rptr) {
-
+void ShowRectangleInfo(Rectangle r) {
+    printf("the topright position: [%d, %d] \n", r.topright.xpos, r.topright.ypos);
+    printf("the bottomright position: [%d, %d] \n", r.topright.xpos, r.bottomleft.ypos);
+    printf("the bottomleft position: [%d, %d] \n", r.bottomleft.xpos, r.bottomleft.ypos);
+    printf("the topleft position: [%d, %d] \n", r.bottomleft.xpos, r.topright.ypos);
 }
 
 int main(void) {
     Point pos1 = {0, 0};
     Point pos2 = {100, 100};
-    Rectangle r = {pos1,pos2};
+    Rectangle r = {pos1, pos2};
 
-    printf("[X, Y]: [%d, %d] \n", pos1.xpos, pos2.ypos);
+    printf("Origin [X, Y]: [%d, %d] \n", pos1.xpos, pos1.ypos);
+    printf("Target [X', Y']: [%d, %d] \n", pos2.xpos, pos2.ypos);
+    ShowRectangleInfo(r);
+    printf("the Area of Rectangle: %d \n", areaCal(r));
 
 }
 
