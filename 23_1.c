@@ -7,11 +7,11 @@ typedef struct point {
 
 // 인자는 주소가 아니라 값을 입력해야 해서 *
 
-Point SwapPoint(Point pos1, Point pos2) {
+Point SwapPoint(Point *pos1, Point *pos2) {
     Point temp;
-    temp = pos1;
-    pos1 = pos2;
-    pos2 = temp;
+    temp = *pos1;
+    *pos1 = *pos2;
+    *pos2 = temp;
 
 }
 
@@ -23,14 +23,13 @@ Point ShowPosition(Point pos1, Point pos2) {
 int main(void) {
     Point pos1={2, 4};
     Point pos2={5, 7};
-    Point result;
 
     printf("[X, Y]: [%d, %d] \n", pos1.xpos, pos1.ypos);
     printf("[X, Y]: [%d, %d] \n", pos2.xpos, pos2.ypos);
 
-    result=ShowPosition(pos1, pos2);
-
-
+    SwapPoint(&pos1, &pos2);
+    ShowPosition(pos1, pos2);
+    return 0;
 
 }
 

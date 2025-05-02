@@ -10,13 +10,20 @@ typedef struct rectangle {
     Point topright;
 } Rectangle;
 
+void areaCal(Rectangle r) {
+    return (r.bottomleft.xpos)
+}
+
 void ShowRectangleInfo(Rectangle * rptr) {
 
 }
 
 int main(void) {
-    int pos1 = {0, 0};
-    int pos2 = {100, 100};
+    Point pos1 = {0, 0};
+    Point pos2 = {100, 100};
+    Rectangle r = {pos1,pos2};
+
+    printf("[X, Y]: [%d, %d] \n", pos1.xpos, pos2.ypos);
 
 }
 
