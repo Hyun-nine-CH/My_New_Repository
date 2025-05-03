@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*
 typedef struct {
   char name[9];
   char jumin[16];
@@ -23,5 +23,15 @@ int main(void)
 
   return 0;
 }
+*/
 
 // \n 추가
+
+int main(void) {
+  FILE *fp = fopen("mystory.txt", "wt");
+  fputs("#이름: 이엘리야 \n", fp);
+  fputs("#이름: 이엘리야 \n", fp);
+  fputs("#전화번호: 010-1111-2222 \n", fp);
+  fclose(fp);
+  return 0;
+}

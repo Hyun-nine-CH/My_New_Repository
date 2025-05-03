@@ -16,7 +16,7 @@ void ShowCircleInfo(Circle *cptr) {
 }
 
 int main(void) {
-    Circle c1={{1,2},3.5};
+    Circle c1={1,2,3.5};
     Circle c2={2,4,3.9};
     ShowCircleInfo(&c1);
     ShowCircleInfo(&c2);
