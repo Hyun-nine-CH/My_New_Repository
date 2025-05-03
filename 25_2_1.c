@@ -1,3 +1,10 @@
+/*
+    해당 문제는 문자 입출력 문제인데 예를 들면,
+    입력: "Yellow Win Grow"
+    출력: "Grow Win Yellow"
+    위와 같이 입력과 출력이 이루어지는 코드이다.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
