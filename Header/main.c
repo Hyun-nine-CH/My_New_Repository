@@ -10,3 +10,17 @@ int main(void) {
     printf("정사각형 둘레(변의 길이 3): %g \n", SquareRound(3));
     return 0;
 }
+
+// 해당 전체 파일 실행 방법
+
+/*
+'program'이라는 실행파일 이름을 지정해서 실행하고 싶을 때,
+
+gcc main.c areaArith.c roundArith.c basicArith.c -o program
+./program
+
+그렇지 않을 때, (일반적인 경우)
+
+gcc main.c areaArith.c roundArith.c basicArith.c
+./a.out
+*/
