@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define HIT_NUM 7
+#define HIT_NUM 5
 
 int main(void) {
     #if HIT_NUM==5

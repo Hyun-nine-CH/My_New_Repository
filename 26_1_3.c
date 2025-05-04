@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define MAX(X, Y) ((X>Y) ? X : Y)
-#define EQUIL(X, Y) X
+#define MAX(X, Y) ((X) > (Y) ? (X) : (Y))
+#define EQUIL(X, Y) X // 추후에 연구 필요
 
 int main(void) {
     double X, Y;
