@@ -7,18 +7,18 @@ int main(int argc, char *argv[]) {
 	char str[32];
 
 	scanf("%d", &i); printf("i: %d\n", i);
-// "%2d%*d", i <- 2자리 정수, 나머지 무시
+//  "%2d%*d", i <- 2자리 정수, 나머지 무시
 
 	scanf("%f", &f); printf("f: %f\n", f);
-// "%f\n": enter키가 무시됨
+//  "%f\n": enter키가 무시됨
 
 //	scanf(" %c", &c); printf("c: %c\n", c); // "공백%c"
-// %c는 공백을 무시하지 않음 scanf("%*c%c", &c);
+//  %c는 공백을 무시하지 않음 scanf("%*c%c", &c);
 	
 	scanf("%*c%c", &c); printf("c: %c\n", c);
 
 	scanf("%s", str); printf("str: %s\n", str);
-// %s는 공백을 무시함
+//  %s는 공백을 무시함
 
 	return 0;
 }
